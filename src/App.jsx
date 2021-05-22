@@ -38,7 +38,7 @@ export default function App() {
 					altText='Datos de: '
 					text='Our World Data'
 					link='https://github.com/owid/covid-19-data/tree/master/public/data/vaccinations'
-					color={true}
+					color='true'
 				/>
 				<Footer />
 			</Layout>
