@@ -6,6 +6,7 @@ export const LayoutStyled = styled.div`
 	color: white;
 	display: flex;
 
+	justify-content: space-between;
 	margin: 0 auto;
 	max-width: 1200px;
 	min-height: 100vh;

@@ -7,11 +7,11 @@ import { Footer } from './components/Footer/Footer'
 export default function App() {
 	const initialData = {
 		date: '',
-		people_vaccinated: null,
-		total_vaccinations: null,
-		people_fully_vaccinated: null,
-		daily_vaccinations: null,
-		people_fully_vaccinated_per_hundred: null,
+		people_vaccinated: '',
+		total_vaccinations: '',
+		people_fully_vaccinated: '',
+		daily_vaccinations: '',
+		people_fully_vaccinated_per_hundred: '',
 	}
 	const [data, setData] = useState(initialData)
 
