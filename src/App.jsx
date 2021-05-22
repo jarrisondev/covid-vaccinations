@@ -1,6 +1,8 @@
-import { Targ } from './components/Targ/Targ'
+import { Targscontainer } from './components/Targscontainer/TargsContainer'
 import { Layout } from './components/Layout/Layout'
 import { useEffect, useState } from 'react'
+import { Anchor } from './components/Anchor/Anchor'
+
 export default function App() {
 	const initialData = {
 		date: '',
@@ -26,14 +28,17 @@ export default function App() {
 	return (
 		<>
 			<Layout>
-				<h1>Vacunación COVID-19 en Colombia</h1>
-				<p>{data.date}</p>
-				<div className=''>
-					<Targ />
-					<Targ />
-					<Targ />
-					<Targ />
-				</div>
+				<h1>
+					Vacunación <span>COVID-19</span> en Colombia
+				</h1>
+				<p className='date'>{data.date}</p>
+				<Targscontainer data={data} />
+				<Anchor
+					altText='Datos de: '
+					text='Our World Data'
+					link='https://github.com/owid/covid-19-data/tree/master/public/data/vaccinations'
+					color={true}
+				/>
 			</Layout>
 		</>
 	)

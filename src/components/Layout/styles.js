@@ -7,14 +7,19 @@ export const LayoutStyled = styled.div`
 	display: flex;
 
 	margin: 0 auto;
-	max-width: 1300px;
+	max-width: 1200px;
 	min-height: 100vh;
 
 	h1 {
 		font-size: 4rem;
 		margin: 0;
+
+		span {
+			color: #c3c1d9;
+		}
 	}
-	p {
+
+	.date {
 		background-color: #05caa7;
 		border: 2px solid #008c6f;
 		border-radius: 2rem;
