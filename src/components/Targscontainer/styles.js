@@ -15,4 +15,8 @@ export const TargsContainerStyled = styled.div`
 		justify-content: space-evenly;
 		width: 100%;
 	}
+	div:nth-of-type(2) {
+		align-items: center;
+		text-align: center;
+	}
 `
