@@ -6,7 +6,7 @@ export const TargsContainerStyled = styled.div`
 	flex-direction: column;
 	justify-content: center;
 
-	margin-top: 2rem;
+	margin: 2rem 0;
 	width: 100%;
 	gap: 1.5rem;
 

@@ -2,6 +2,7 @@ import { Targscontainer } from './components/Targscontainer/TargsContainer'
 import { Layout } from './components/Layout/Layout'
 import { useEffect, useState } from 'react'
 import { Anchor } from './components/Anchor/Anchor'
+import { Footer } from './components/Footer/Footer'
 
 export default function App() {
 	const initialData = {
@@ -39,6 +40,7 @@ export default function App() {
 					link='https://github.com/owid/covid-19-data/tree/master/public/data/vaccinations'
 					color={true}
 				/>
+				<Footer />
 			</Layout>
 		</>
 	)
