@@ -23,8 +23,9 @@ export const LayoutStyled = styled.div`
 		background-color: #05caa7;
 		border: 2px solid #008c6f;
 		border-radius: 2rem;
-		font-size: 1.3rem;
+		box-shadow: 0rem 0rem 0.7rem black;
 
+		font-size: 1.3rem;
 		margin-top: 1rem;
 		padding: 0.3rem 2rem;
 	}

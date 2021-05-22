@@ -4,13 +4,14 @@ export const TargStyled = styled.div`
 	background-color: #c3c1d9;
 	border: 1px solid #ce225e;
 	border-radius: 1rem;
-	display: flex;
+	box-shadow: 0rem 0rem 0.7rem black;
 
+	display: flex;
 	flex-direction: column;
 	height: 7rem;
 	justify-content: space-between;
-	padding: 1rem;
 
+	padding: 1rem;
 	width: 23rem;
 
 	h2 {
