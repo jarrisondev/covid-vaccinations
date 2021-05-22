@@ -1,10 +1,11 @@
-export const Anchor = ({ text, altText, link }) => {
+import { AnchorStyled } from './styles'
+export const Anchor = ({ text, altText, link, color }) => {
 	return (
-		<p>
-			{altText}
+		<AnchorStyled color={color}>
+			{altText.toUpperCase()}
 			<a href={link} target='_blank' rel='noopener noreferrer'>
-				{text}
+				{text.toUpperCase()}
 			</a>
-		</p>
+		</AnchorStyled>
 	)
 }
