@@ -7,7 +7,7 @@ export const AnchorStyled = styled.p`
 		color: ${(props) => (props.color ? '#05caa7' : 'white')};
 	}
 
-	@media (max-width: 700px) {
-		font-size: 1.2rem;
+	@media (max-width: 500px) {
+		font-size: 90%;
 	}
 `
