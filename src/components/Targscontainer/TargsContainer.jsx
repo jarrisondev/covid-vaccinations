@@ -11,7 +11,11 @@ export const Targscontainer = ({ data }) => {
 					data={data.people_fully_vaccinated}
 				/>
 			</div>
-			<Targ title='total dosis administradas' data={data.total_vaccinations} />
+			<Targ
+				title='total dosis administradas'
+				data={data.total_vaccinations}
+				center='true'
+			/>
 			<div className='targsSubContainer'>
 				<Targ title='vacunacciones diarias' data={data.daily_vaccinations} />
 				<Targ

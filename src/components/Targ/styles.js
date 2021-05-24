@@ -11,6 +11,7 @@ export const TargStyled = styled.div`
 	height: 7rem;
 	justify-content: space-between;
 
+	text-align: ${(props) => (props.center ? 'center' : 'left')};
 	padding: 1rem;
 	width: 23rem;
 
@@ -23,5 +24,10 @@ export const TargStyled = styled.div`
 		color: #ce225e;
 		font-size: 2.2rem;
 		font-weight: 700;
+	}
+
+	@media (max-width: 850px) {
+		text-align: center;
+		width: 90%;
 	}
 `

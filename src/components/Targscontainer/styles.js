@@ -15,8 +15,17 @@ export const TargsContainerStyled = styled.div`
 		justify-content: space-evenly;
 		width: 100%;
 	}
-	div:nth-of-type(2) {
+
+	.targ-middle {
 		align-items: center;
 		text-align: center;
+	}
+
+	@media (max-width: 850px) {
+		.targsSubContainer {
+			align-items: center;
+			flex-direction: column;
+			gap: 1.5rem;
+		}
 	}
 `
