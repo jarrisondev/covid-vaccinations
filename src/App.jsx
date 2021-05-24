@@ -17,6 +17,10 @@ export default function App() {
 
 	useEffect(() => {
 		fetch(
+			'https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/country_data/Colombia.csv'
+		).then((res) => console.log(res))
+		// .then((data) => console.log(data))
+		fetch(
 			'https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.json'
 		)
 			.then((data) => data.json())
