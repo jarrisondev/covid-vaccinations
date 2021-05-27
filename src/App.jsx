@@ -17,16 +17,15 @@ export default function App() {
 
 	useEffect(() => {
 		fetch(
-			'https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/country_data/Colombia.csv'
-		).then((res) => console.log(res))
-		// .then((data) => console.log(data))
-		fetch(
 			'https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.json'
 		)
 			.then((data) => data.json())
 			.then((res) => {
-				let lastData = res[40].data.length - 1
-				setData(res[40].data[lastData])
+				const [country] = res.filter(
+					(country) => country.country === 'Colombia'
+				)
+				let lastData = country.data.length - 1
+				setData(country.data[lastData])
 			})
 	}, [])
 
