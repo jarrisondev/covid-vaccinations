@@ -1,3 +1,4 @@
+import SkelentonElement from '../Skeletons/SkelentonElement'
 import { TargStyled } from './styles'
 
 export const Targ = ({ title, data, porcent, center }) => {
@@ -10,7 +11,11 @@ export const Targ = ({ title, data, porcent, center }) => {
 		<>
 			<TargStyled center={center}>
 				<h2>{title.toUpperCase()}:</h2>
-				<p>{porcent ? `${data}%` : formatNumber(data)}</p>
+				{data && <p>{porcent ? `${data}%` : formatNumber(data)}</p>}
+
+				{!data && (
+					<SkelentonElement type='Number' bgC='#ce225e' frC='#da4579' />
+				)}
 			</TargStyled>
 		</>
 	)

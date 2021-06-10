@@ -3,6 +3,7 @@ import { Layout } from './components/Layout/Layout'
 import { useEffect, useState } from 'react'
 import { Anchor } from './components/Anchor/Anchor'
 import { Footer } from './components/Footer/Footer'
+import SkelentonElement from './components/Skeletons/SkelentonElement'
 
 export default function App() {
 	const initialData = {
@@ -15,8 +16,8 @@ export default function App() {
 	}
 	const [data, setData] = useState(initialData)
 
-	useEffect(() => {
-		fetch(
+	useEffect(async () => {
+		await fetch(
 			'https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.json'
 		)
 			.then((data) => data.json())
@@ -35,7 +36,18 @@ export default function App() {
 				<h1>
 					Vacunación <span>COVID-19</span> en Colombia
 				</h1>
-				<p className='date'>{data.date}</p>
+				<p className='date'>
+					{data.date && data.date}
+					{!data.date && (
+						<SkelentonElement
+							width={100}
+							height={30}
+							type='Date'
+							bgC='#05caa7'
+							frC='#32e6c5'
+						/>
+					)}
+				</p>
 				<Targscontainer data={data} />
 				<Anchor
 					altText='Datos de: '
