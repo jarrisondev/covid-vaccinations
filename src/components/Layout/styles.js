@@ -32,7 +32,11 @@ export const LayoutStyled = styled.div`
 		box-shadow: 0rem 0rem 0.7rem black;
 
 		font-size: 1.3rem;
+		height: 1.5rem;
 		margin-top: 1rem;
 		padding: 0.3rem 2rem;
+
+		text-align: center;
+		width: 7rem;
 	}
 `

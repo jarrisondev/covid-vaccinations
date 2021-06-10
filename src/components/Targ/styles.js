@@ -27,7 +27,12 @@ export const TargStyled = styled.div`
 	}
 
 	@media (max-width: 850px) {
+		align-items: center;
 		text-align: center;
 		width: 90%;
+
+		h2 {
+			font-size: 1.5rem;
+		}
 	}
 `
