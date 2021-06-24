@@ -1,5 +1,5 @@
 import { Targscontainer } from './components/Targscontainer/TargsContainer'
-import { Layout } from './components/Layout/Layout'
+import { LayoutStyled } from './styles/layout'
 import { useEffect, useState } from 'react'
 import { Anchor } from './components/Anchor/Anchor'
 import SkelentonElement from './components/Skeletons/SkelentonElement'
@@ -32,7 +32,7 @@ export default function App() {
 
   return (
     <>
-      <Layout theme={theme}>
+      <LayoutStyled t={theme}>
         <div className="container">
           <h1>
             Vacunación <span>COVID-19</span> en Colombia
@@ -64,7 +64,7 @@ export default function App() {
             color='true'
           />
         </div>
-      </Layout>
+      </LayoutStyled>
     </>
   )
 }
