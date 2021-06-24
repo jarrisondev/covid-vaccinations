@@ -1,9 +1,9 @@
 ::-webkit-scrollbar {
-	width: 0.3rem;
+  width: 0.3rem;
 }
 ::-webkit-scrollbar-thumb {
-	background-color: #ce225e;
-	border-radius: 5px;
+  background-color: #ce225e;
+  border-radius: 5px;
 }
 
 p::selection,
@@ -11,18 +11,10 @@ h1::selection,
 h2::selection,
 span::selection,
 a::selection {
-	color: white;
-	background: #ce225e;
+  color: white;
+  background: #ce225e;
 }
 
 * {
-	transition: all 0.5s ease-in-out;
-}
-
-body {
-	background-color: #494898;
-	background-image: radial-gradient(#7674df 1px, transparent 0);
-	background-size: 40px 40px;
-	background-position: 0 0, 20px 20px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-in-out;
 }
