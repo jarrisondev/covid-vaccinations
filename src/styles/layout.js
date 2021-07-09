@@ -61,6 +61,10 @@ export const LayoutStyled = styled.div`
         path {
           fill: ${(props) => (!props.t ? '#494898' : 'white')};
         }
+
+        &:hover{
+          opacity:0.8
+        }
       }
     }
   }

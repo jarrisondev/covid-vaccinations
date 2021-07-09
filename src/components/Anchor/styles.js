@@ -5,6 +5,10 @@ export const AnchorStyled = styled.p`
   margin-bottom: 1rem;
   a {
     color: ${(props) => (props.color ? '#05caa7' : 'white')};
+
+    &:hover{
+      opacity: 0.7;
+    }
   }
 
   @media (max-width: 500px) {
