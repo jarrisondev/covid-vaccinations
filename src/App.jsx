@@ -58,6 +58,11 @@ export default function App() {
           </p>
           <Targscontainer data={data} />
           <Anchor
+            text='¿Tienes priorización?'
+            link='https://mivacuna.sispro.gov.co/MiVacuna/'
+            color='true'
+          />
+          <Anchor
             altText='Datos de: '
             text='Our World Data'
             link='https://github.com/owid/covid-19-data/tree/master/public/data/vaccinations'
