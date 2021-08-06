@@ -59,7 +59,7 @@ export default function App() {
           <Targscontainer data={data} />
           <Anchor
             text='¿Tienes priorización?'
-            link='https://mivacuna.sispro.gov.co/MiVacuna/'
+            link='https://mivacuna.sispro.gov.co/MiVacuna/Account/Login'
             color='true'
           />
           <Anchor
